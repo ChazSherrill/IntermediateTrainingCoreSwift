@@ -22,16 +22,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let lightRed = UIColor(red: 247/255, green: 66/255, blue: 82/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = .lightRed
+        UINavigationBar.appearance().prefersLargeTitles = true
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
         
         UINavigationBar.appearance().tintColor = .white
         UINavigationBar.appearance().prefersLargeTitles = true
-        UINavigationBar.appearance().barTintColor = lightRed
+        UINavigationBar.appearance().barTintColor = .lightRed
         
         if #available(iOS 13.0, *) {
             let appearance = UINavigationBarAppearance()
             UINavigationBar.appearance().tintColor = .white
-            appearance.backgroundColor = lightRed
+            appearance.backgroundColor = .lightRed
             appearance.largeTitleTextAttributes = [.foregroundColor : UIColor.white] //portrait title
             appearance.titleTextAttributes = [.foregroundColor : UIColor.white] //landscape title
             
