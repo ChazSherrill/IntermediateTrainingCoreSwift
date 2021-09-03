@@ -19,26 +19,35 @@ class CompaniesController: UITableViewController, CreateCompanyControllerDelegat
     
     var companies = [Company]() //empty array
 
-    //let: constant
-    //var: variable that can be modified
-//    var companies = [
-//        Company(name: "Apple", founded: Date()),
-//        Company(name: "Google", founded: Date()),
-//        Company(name: "Facebook", founded: Date())
-//    ]
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+    let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { (_, indexPath) in
+        let company = self.companies[indexPath.row]
+        print("Attempting to delete company:", company.name ?? "")
+        
+        // remove the company from our table view
+        self.companies.remove(at: indexPath.row)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+        
+        //delete the company from Core Data
+        
+        let context = CoreDataManager.shared.persistentContainer.viewContext
+        
+        context.delete(company)
+        
+        do {
+            try context.save()
+        } catch let saveErr {
+            print("Failed to delete company:", saveErr)
+        }
+    }
+        
+        let editAction = UITableViewRowAction(style: .normal, title: "Edit") { (_, indexPath) in
+            print("Editing company...")
+        }
+        
+        return [deleteAction, editAction]
+    }
     
-//    func addCompany(company: Company){
-//        //let tesla = Company(name: "Tesla", founded: Date())
-//
-//
-//        companies.append(company)
-//
-//        //2- insert a new index path into tableView
-//
-//        let newIndexPath = IndexPath(row: companies.count - 1, section: 0)
-//        tableView.insertRows(at: [newIndexPath], with: .automatic)
-//    }
-//
     private func fetchCompanies(){
         // attempt my core data fetch somehow...
 //        let persistentContainer = NSPersistentContainer(name: "IntermediateTrainingModels")
