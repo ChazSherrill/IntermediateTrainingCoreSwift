@@ -10,6 +10,7 @@
 		71610DA226E17BC5005FDF0B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA126E17BC5005FDF0B /* Company.swift */; };
 		71610DA426E1812E005FDF0B /* CreateCompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA326E1812E005FDF0B /* CreateCompanyController.swift */; };
 		71610DA726E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA526E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld */; };
+		71A5C56426E2CA0E0020FA0C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5C56326E2CA0E0020FA0C /* CoreDataManager.swift */; };
 		71F35EFA26E1666F00C622FF /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F35EF926E1666F00C622FF /* UIColor+theme.swift */; };
 		C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */; };
 		C720C0B51F9BE1B3006195A0 /* CompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */; };
@@ -23,6 +24,7 @@
 		71610DA126E17BC5005FDF0B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		71610DA326E1812E005FDF0B /* CreateCompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyController.swift; sourceTree = "<group>"; };
 		71610DA626E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntermediateTrainingModels.xcdatamodel; sourceTree = "<group>"; };
+		71A5C56326E2CA0E0020FA0C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		71F35EF926E1666F00C622FF /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		C720C0AF1F9BE1B3006195A0 /* IntermediateTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntermediateTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				C7A45EE7245BA7F0002F1098 /* SceneDelegate.swift */,
 				71F35EF926E1666F00C622FF /* UIColor+theme.swift */,
 				71610DA526E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld */,
+				71A5C56326E2CA0E0020FA0C /* CoreDataManager.swift */,
 			);
 			path = IntermediateTraining;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */,
 				71610DA226E17BC5005FDF0B /* Company.swift in Sources */,
 				C7A45EE8245BA7F0002F1098 /* SceneDelegate.swift in Sources */,
+				71A5C56426E2CA0E0020FA0C /* CoreDataManager.swift in Sources */,
 				71610DA426E1812E005FDF0B /* CreateCompanyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
