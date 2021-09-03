@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		71610DA226E17BC5005FDF0B /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA126E17BC5005FDF0B /* Company.swift */; };
 		71610DA426E1812E005FDF0B /* CreateCompanyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA326E1812E005FDF0B /* CreateCompanyController.swift */; };
+		71610DA726E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71610DA526E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld */; };
 		71F35EFA26E1666F00C622FF /* UIColor+theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F35EF926E1666F00C622FF /* UIColor+theme.swift */; };
 		C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */; };
 		C720C0B51F9BE1B3006195A0 /* CompaniesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		71610DA126E17BC5005FDF0B /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		71610DA326E1812E005FDF0B /* CreateCompanyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCompanyController.swift; sourceTree = "<group>"; };
+		71610DA626E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IntermediateTrainingModels.xcdatamodel; sourceTree = "<group>"; };
 		71F35EF926E1666F00C622FF /* UIColor+theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+theme.swift"; sourceTree = "<group>"; };
 		C720C0AF1F9BE1B3006195A0 /* IntermediateTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntermediateTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,15 +65,16 @@
 			isa = PBXGroup;
 			children = (
 				C720C0B21F9BE1B3006195A0 /* AppDelegate.swift */,
-				C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */,
-				C7A45EE7245BA7F0002F1098 /* SceneDelegate.swift */,
-				C720C0B61F9BE1B3006195A0 /* Main.storyboard */,
 				C720C0B91F9BE1B3006195A0 /* Assets.xcassets */,
-				C720C0BB1F9BE1B3006195A0 /* LaunchScreen.storyboard */,
-				C720C0BE1F9BE1B3006195A0 /* Info.plist */,
-				71F35EF926E1666F00C622FF /* UIColor+theme.swift */,
+				C720C0B41F9BE1B3006195A0 /* CompaniesController.swift */,
 				71610DA126E17BC5005FDF0B /* Company.swift */,
 				71610DA326E1812E005FDF0B /* CreateCompanyController.swift */,
+				C720C0BE1F9BE1B3006195A0 /* Info.plist */,
+				C720C0BB1F9BE1B3006195A0 /* LaunchScreen.storyboard */,
+				C720C0B61F9BE1B3006195A0 /* Main.storyboard */,
+				C7A45EE7245BA7F0002F1098 /* SceneDelegate.swift */,
+				71F35EF926E1666F00C622FF /* UIColor+theme.swift */,
+				71610DA526E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld */,
 			);
 			path = IntermediateTraining;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71610DA726E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld in Sources */,
 				C720C0B51F9BE1B3006195A0 /* CompaniesController.swift in Sources */,
 				71F35EFA26E1666F00C622FF /* UIColor+theme.swift in Sources */,
 				C720C0B31F9BE1B3006195A0 /* AppDelegate.swift in Sources */,
@@ -345,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71610DA526E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71610DA626E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodel */,
+			);
+			currentVersion = 71610DA626E2AC39005FDF0B /* IntermediateTrainingModels.xcdatamodel */;
+			path = IntermediateTrainingModels.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C720C0A71F9BE1B3006195A0 /* Project object */;
 }
