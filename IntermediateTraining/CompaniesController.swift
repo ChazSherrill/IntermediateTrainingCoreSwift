@@ -8,16 +8,38 @@
 
 import UIKit
 
-class CompaniesController: UITableViewController {
+class CompaniesController: UITableViewController, CreateCompanyControllerDelegate {
+    func didAddCompany(company: Company) {
+        companies.append(company) //1 - modify your array
+        let newIndexPath = IndexPath(row: companies.count - 1, section: 0)//2- insert a new index path into tableView
+        tableView.insertRows(at: [newIndexPath], with: .automatic)
+    }
+    
 
-    let companies = [
+    //let: constant
+    //var: variable that can be modified
+    var companies = [
         Company(name: "Apple", founded: Date()),
         Company(name: "Google", founded: Date()),
         Company(name: "Facebook", founded: Date())
     ]
     
+//    func addCompany(company: Company){
+//        //let tesla = Company(name: "Tesla", founded: Date())
+//
+//
+//        companies.append(company)
+//
+//        //2- insert a new index path into tableView
+//
+//        let newIndexPath = IndexPath(row: companies.count - 1, section: 0)
+//        tableView.insertRows(at: [newIndexPath], with: .automatic)
+//    }
+//
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //navigationItem.leftBarButtonItem = UIBarButtonItem(title: "TEST ADD", style: .plain, target: self, action: #selector(addCompany))
         
         view.backgroundColor = .white
         
@@ -41,6 +63,8 @@ class CompaniesController: UITableViewController {
        // createCompanyController.view.backgroundColor = .green
         
         let navController = CustomNavigationController(rootViewController: createCompanyController)
+        
+        createCompanyController.delegate = self //this bit of code links the companies controller to the createcompany controller by creating an instance of copanies controller inside createcompanycontroller
         
         present(navController, animated: true, completion: nil)
         
